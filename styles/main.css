@@ -1,0 +1,795 @@
+:root{
+    --main-color:#ec6453;
+}
+
+.custom-nav{
+    background: var(--main-color)!important;
+}
+.navbar-nav a{
+    color: white;
+}
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+.hero-section{
+    padding: 0;
+    width: 100%;
+    position: relative;
+}
+.hero-section-img{
+    width: 100%;
+    display: block;
+}
+.hero-section-btn-container {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height: 60px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    margin-bottom: 100px;
+}
+.hero-section-mobile-btn-container{
+    display: grid;
+    gap: 20px;
+}
+
+@media (max-width: 500px) {
+    .hero-section-mobile-btn-container{
+        grid-template-columns: 1fr;
+    }
+}
+/* Layout for above 900px width (desktop view) */
+@media (min-width: 901px) {
+    .hero-section-mobile-btn-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.h2-textfont{
+    font-family: "Nova Round", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #ec6453;
+    text-align: center;
+}
+.classes-overview-section{
+    padding: 15px;
+    padding-top:60px;
+    padding-bottom:60px;
+}
+.classes-overview-section-mobile-container{
+    display: grid;
+    gap: 45px;
+    max-width:1300px;
+    padding-top:50px;
+}
+
+@media (max-width: 500px) {
+    .classes-overview-section-mobile-container{
+        grid-template-columns: 1fr;
+    }
+}
+/* Layout for above 900px width (desktop view) */
+@media (min-width: 501px) {
+    .classes-overview-section-mobile-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* Layout for above 900px width (desktop view) */
+@media (min-width: 901px) {
+    .classes-overview-section-mobile-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.classes-overview-card{
+    display: grid;
+    position:relative;
+    gap: 20px;
+    max-width: 400px;
+    height: 280px;
+    border-radius: 20px;
+}
+.classes-overview-card img{
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+}
+.classes-overview-card-container {
+    display:grid;
+    gap:20px;
+}
+.card-title-container{
+    display:flex;
+    position:absolute;
+    bottom: 0;
+    width:100%;
+    background-color:rgb(236, 100, 83,0.9);
+    height: 50px;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-left:15px;
+}
+.card-title{
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  color: white;
+}
+
+.facilities-section { /* 大模块容器样式 */
+    background-color: rgb(251, 237, 235); /* 设置背景颜色 */
+    padding: 60px 15px; /* 设置内边距 */
+    text-align: center; /* 居中对齐内容 */
+  }
+
+  .facilities-title { /* 模块标题样式 */
+    font-family: 'Poppins', sans-serif; /* 字体 */
+    font-size: 35px; /* 字体大小 */
+    font-weight: 600; /* 字重 */
+    color: #ec6453; /* 字体颜色 */
+    margin-bottom: 40px; /* 底部外边距 */
+  }
+
+  .facilities-description { /* 描述文字样式 */
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    color: #333;
+    margin-bottom: 40px; /* 底部外边距 */
+  }
+
+  .facilities-container { /* 卡片容器样式 */
+    display: flex; /* 使用弹性布局 */
+    justify-content: center; /* 内容居中对齐 */
+    gap: 20px; /* 卡片之间的间距 */
+    flex-wrap: wrap; /* 支持多行换行 */
+  }
+  .facility-card { /* 单个卡片样式 */
+    position: relative; /* 设置相对定位，为标题绝对定位提供参考 */
+    width: 300px; /* 卡片宽度 */
+    height: 400px; /* 卡片高度 */
+    border-radius: 20px; /* 圆角 */
+    overflow: hidden; /* 隐藏超出部分 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 卡片阴影效果 */
+  }
+
+  .facility-image { /* 卡片图片样式 */
+    width: 100%; /* 图片宽度占满卡片 */
+    height: 100%; /* 图片高度占满卡片 */
+    object-fit: cover; /* 图片裁剪方式，保持比例填充 */
+  }
+
+  .facility-card-title { /* 卡片标题样式 */
+    position: absolute; /* 绝对定位，固定在卡片底部 */
+    bottom: 0; /* 靠底部对齐 */
+    width: 100%; /* 宽度占满卡片 */
+    background-color: rgba(236, 100, 83, 0.9); /* 半透明背景 */
+    color: white; /* 字体颜色 */
+    font-family:"Nunito", sans-serif; /* 字体 */
+    font-size: 18px; /* 字体大小 */
+    font-weight: 500; /* 字重 */
+    text-align: center; /* 文本居中对齐 */
+    padding: 10px; /* 内边距 */
+  }
+
+  .facilities-btn-container { /* 按钮容器样式 */
+    margin-top: 40px; /* 顶部外边距 */
+    margin-bottom:40px; 
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    }
+    
+  .facilities-btn { /* 按钮样式 */
+    font-family: 'Poppins', sans-serif; /* 字体 */
+    font-size: 16px; /* 字体大小 */
+    font-weight: 500; /* 字重 */
+    color: #ec6453; /* 字体颜色 */
+    border: 2px solid #ec6453; /* 边框颜色和粗细 */
+    background-color:#fbeeed; /*  */
+    padding: 10px 20px; /* 内边距 */
+    border-radius: 10px; /* 圆角按钮 */
+    cursor: pointer; /* 鼠标指针样式 */
+    transition: all 0.3s ease; /* 动画过渡效果 */
+  }
+
+  .facilities-btn:hover { /* 按钮悬停效果 */
+    background-color: #ec6453; /* 改变背景颜色 */
+    color: white; /* 改变字体颜色 */
+  }
+
+  .activities-section { /* 活动模块容器样式 */
+    background-color: white;
+    padding: 60px 15px;
+    text-align: center;
+  }
+
+  .activity-title { /* 活动标题样式 */
+    font-family: "Nunito", sans-serif; 
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+
+  .activity-description { /* 活动描述样式 */
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    color: #333;
+    margin-bottom: 40px;
+  }
+
+  .activities-container { /* 活动卡片容器样式 */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 默认一列布局 */
+    gap: 30px;
+  }
+
+  @media (min-width: 501px) { /* 中等屏幕宽度，显示两列 */
+    .activities-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 901px) { /* 大屏幕宽度，显示三列 */
+    .activities-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .activity-card { /* 单个活动卡片样式 */
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+  }
+
+  .activity-image { /* 活动图片样式 */
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+  }
+
+  .activity-content { /* 活动内容容器样式 */
+    padding: 15px;
+    text-align: left;
+  }
+
+  .activity-details { /* 活动详细信息样式 */
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #ec6453;
+    margin-bottom: 15px;
+  }
+  .activity-description { /* 活动描述样式 */
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    min-height: 80px;
+  }
+
+  .signup-btn { /* 注册按钮样式 */
+    font-family: 'Nunito', sans-serif; /* 字体 */
+    font-size: 16px; /* 字体大小 */
+    font-weight: 500; /* 字重 */
+    color: #ec6453; /* 字体颜色 */
+    border: 2px solid #ec6453; /* 边框颜色和粗细 */
+    background-color: transparent; /* 背景透明 */
+    padding: 10px 20px; /* 内边距 */
+    border-radius: 10px; /* 圆角按钮 */
+    cursor: pointer; /* 鼠标指针样式 */
+    transition: all 0.3s ease; /* 动画过渡效果 */
+  }
+
+  .activities-btn-container { /* 查看更多按钮容器样式 */
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif; /* 字体 */
+    font-size: 14px; /* 字体大小 */
+    font-weight: 500; /* 字重 */
+    color: #ec6453; /* 字体颜色 */
+    border: 2px solid #ec6453; /* 边框颜色和粗细 */
+    background-color: transparent; /* 背景透明 */
+  }
+
+  .coaches-section { /* 教练模块样式 */
+    background-color: #fbeeed;
+    padding: 60px 15px;
+    text-align: center;
+  }
+
+  .coaches-title { /* 模块标题样式 */
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #ec6453;
+    margin-bottom: 40px;
+  }
+
+  .coaches-container { /* 教练卡片容器样式 */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 默认单列布局 */
+    gap: 30px;
+  }
+
+  @media (min-width: 501px) { /* 中等屏幕宽度，显示两列 */
+    .coaches-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 901px) { /* 大屏幕宽度，显示四列 */
+    .coaches-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .coach-card { /* 单个教练卡片样式 */
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+  }
+
+  .coach-image { /* 教练图片样式 */
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+
+  .coach-name { /* 教练姓名样式 */
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ec6453;
+    margin-bottom: 10px;
+  }
+
+  .coach-title { /* 教练职称样式 */
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  .coach-details { /* 教练详细信息列表样式 */
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #666;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  .coach-details li { /* 教练详细信息项样式 */
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+  }
+
+  .coach-details li:before { /* 列表项前的装饰 */
+    content: '\2022';
+    color: #ec6453;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .coaches-btn-container { /* 查看更多按钮容器样式 */
+    margin-top: 40px;
+  }
+
+  .membership-section { /* 会员模块样式 */
+    background-color: white;
+    padding: 60px 15px;
+    text-align: center;
+  }
+
+  .membership-title { /* 模块标题样式 */
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #ec6453;
+    margin-bottom: 40px;
+  }
+
+  .membership-container { /* 会员计划容器样式 */
+    display: grid;
+    grid-template-columns: 1fr; /* 默认单列布局 */
+    gap: 30px;
+  }
+
+  @media (min-width: 501px) { /* 中等屏幕宽度，显示两列 */
+    .membership-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 901px) { /* 大屏幕宽度，显示三列 */
+    .membership-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .membership-card { /* 单个会员卡片样式 */
+    background-color: #fbeeed;
+    border: 1px solid #ec6453;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .membership-plan { /* 会员计划标题样式 */
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ec6453;
+    margin-bottom: 10px;
+    justify-items: center;
+  }
+
+  .membership-price { /* 会员价格样式 */
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: #ec6453;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  .membership-description { /* 会员描述样式 */
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .membership-details { /* 会员详细信息列表样式 */
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #666;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .membership-details li { /* 会员详细信息项样式 */
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+  }
+  .membership-details li:before { /* 列表项前的装饰 */
+    content: '\2713';
+    color: #ec6453;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .membership-btn { /* 按钮样式 */
+    background-color: #D9674E;
+    border-color: #ec6453;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-section {
+    background-color: #D9674E; /* 背景色与整体页面颜色保持一致 */
+    color: #fff; /* 字体颜色为白色 */
+    padding: 40px 20px; /* 上下内边距调整，保证内容布局均匀 */
+    font-family: 'Nunito', sans-serif; /* 统一字体 */
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+  }
+  
+  .footer-heading {
+    font-family: "Nova Round", system-ui;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+  }
+  
+  .footer-logo img {
+    max-width: 120px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-legal-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+  }
+  
+  .footer-legal-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-legal-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 地图 iframe 的样式 */
+  iframe {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  /* 响应式布局 */
+  @media (max-width: 500px) {
+    .footer-content {
+      flex-direction: column;
+    }
+    .footer-column {
+      text-align: center;
+    }
+  }
+  
+  @media (min-width: 501px) and (max-width: 900px) {
+    .footer-content {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .footer-column {
+      flex: 1 1 calc(50% - 20px);
+      text-align: left;
+    }
+  }
+  
+  @media (min-width: 901px) {
+    .footer-content {
+      flex-direction: row;
+    }
+    .footer-column {
+      flex: 1;
+    }
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+.testimonial-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.testimonial-section h1 {
+    color: #E76454;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.testimonial-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background-color:#fbeeed;
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.testimonial-card h3 {
+    font-size: 0.8rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: #F9B233;
+    margin-bottom: 15px;
+}
+
+.testimonial-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.testimonial-card .author {
+    font-size: 0.9rem;
+    color: #333;
+    position: relative;
+}
+
+.carousel-controls {
+    margin-top: 20px;
+}
+
+.carousel-controls button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #E76454;
+    margin: 0 10px;
+}
+
+.carousel-controls button:hover {
+    color: #F9B233;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fdf4f2;
+}
+
+.contact-text {
+    font-family: 'Nunito', sans-serif;
+    align-items: start;
+    padding: 20px;
+    max-width: 500px;
+    font-size: 0.8rem;
+    color: #E76454;
+}
+
+.contact-text h1 {
+    color: #E76454;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-text p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.form-container {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+    position: relative;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-container label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-container input, .form-container select, .form-container textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-container textarea {
+    resize: none;
+    height: 100px;
+}
+
+.form-container button {
+    background-color: #E76454;
+    color: #fff;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #d05343;
+}
+
+.qr-code {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.qr-code img {
+    width: 150px;
+    height: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-text, .form-container {
+        max-width: 100%;
+    }
+}
+  
