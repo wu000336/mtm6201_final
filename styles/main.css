@@ -224,6 +224,7 @@
     font-style: normal;
     color: #333;
     margin-bottom: 40px;
+    text-align: center;
   }
 
   .activities-container { /* 活动卡片容器样式 */
@@ -276,6 +277,7 @@
     margin-top: 20px;
     margin-bottom: 15px;
     min-height: 80px;
+    text-align: center;
   }
 
   .signup-btn { /* 注册按钮样式 */
