@@ -207,6 +207,7 @@
   .activities-section { /* 活动模块容器样式 */
     background-color: white;
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .activity-title { /* 活动标题样式 */
